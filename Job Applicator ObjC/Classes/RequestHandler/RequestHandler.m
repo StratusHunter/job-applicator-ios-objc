@@ -36,7 +36,8 @@
 
 - (nonnull NSURLRequest *)applyRequest:(nonnull JobApplication *)application {
 
-    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:self.baseURL];
+    NSURL *pathURL = [self.baseURL URLByAppendingPathComponent:@"apply"];
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:pathURL];
 
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];

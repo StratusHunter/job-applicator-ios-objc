@@ -11,5 +11,6 @@
 
 - (BOOL)validateApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls;
 - (nonnull JobApplication *)createApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls;
+- (void)performApplyRequest:(nonnull JobApplication *)application completionHandler:(void (^)(JobApplication *, NSError *))completionHandler;
 
 @end

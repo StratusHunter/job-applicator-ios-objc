@@ -6,8 +6,7 @@
 #import "InputView.h"
 #import "Fonts.h"
 
-@implementation InputView {
-}
+@implementation InputView
 
 - (instancetype)initWithFrame:(CGRect)frame {
 
@@ -40,7 +39,7 @@
     self.textContainer.lineFragmentPadding = 0;
     self.textContainerInset = UIEdgeInsetsMake(8, 8, 8, 8);
 
-    self.backgroundColor = [[UIColor colorNamed:@"darkJazzBlue"] colorWithAlphaComponent:0.5];
+    self.backgroundColor = [[UIColor colorNamed:@"DarkJazzBlue"] colorWithAlphaComponent:0.5];
     self.textColor = UIColor.whiteColor;
     self.tintColor = UIColor.whiteColor;
 

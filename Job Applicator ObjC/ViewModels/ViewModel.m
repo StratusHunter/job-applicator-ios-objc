@@ -34,7 +34,7 @@
 
 - (nonnull NSArray<TeamType *> *)createTeamList:(nonnull NSString *)team {
 
-    NSArray<NSString *> *teamList = [team componentsSeparatedByString:@","];
+    NSArray<NSString *> *teamList = (team.length > 0) ? [team componentsSeparatedByString:@","] : @[];
     NSMutableArray <TeamType *> *teamTypeArray = [NSMutableArray new];
 
     [teamList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
@@ -53,12 +53,13 @@
 
 - (nonnull NSArray<NSURL *> *)createURLList:(nonnull NSString *)url {
 
-    NSArray<NSString *> *urlStringList = [url componentsSeparatedByString:@"\n"];
+    NSArray<NSString *> *urlStringList = (url.length > 0) ? [url componentsSeparatedByString:@"\n"] : @[];
     NSMutableArray <NSURL *> *urlList = [NSMutableArray new];
 
     [urlStringList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
 
-        NSURL *urlFromString = [[NSURL alloc] initWithString:obj];
+        NSString *escapedString = [obj stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSURL *urlFromString = [[NSURL alloc] initWithString:escapedString];
 
         if (urlFromString != nil) {
 
@@ -105,7 +106,7 @@
 
                                          JobApplication *responseApplication = nil;
 
-                                         if (error != nil) {
+                                         if (error == nil) {
 
                                              NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
                                              responseApplication = [[JobApplication alloc] initWithJSON:json];
@@ -113,7 +114,10 @@
 
                                          if (completionHandler) {
 
-                                             completionHandler(responseApplication, error);
+                                             dispatch_async(dispatch_get_main_queue(), ^{
+
+                                                 completionHandler(responseApplication, error);
+                                             });
                                          }
                                      }];
 

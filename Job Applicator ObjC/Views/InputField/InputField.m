@@ -39,7 +39,7 @@ static const UIEdgeInsets edgeInset = {8, 8, 8, 8};
 
     self.borderStyle = UITextBorderStyleNone;
 
-    self.backgroundColor = [[UIColor colorNamed:@"darkJazzBlue"] colorWithAlphaComponent:0.5f];
+    self.backgroundColor = [[UIColor colorNamed:@"DarkJazzBlue"] colorWithAlphaComponent:0.5f];
     self.textColor = UIColor.whiteColor;
     self.tintColor = UIColor.whiteColor;
 

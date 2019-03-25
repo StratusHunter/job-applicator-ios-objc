@@ -10,6 +10,7 @@
 		4C23F02CB6E715EBEBA9B232 /* JobApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F65BF04F7338105687EC /* JobApplication.m */; };
 		4C23F0315C6C3121E3D7765B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FF2BF63096F1093F15EC /* ViewController.m */; };
 		4C23F3B422D3F08CFF62243C /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F9CB963F22EF1678960E /* NSString+Regex.m */; };
+		4C23F48FFA3971E57AC03DAC /* Content.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C23FD10F4C5350CAC511ADC /* Content.strings */; };
 		4C23F494E011D8A7BB8DF5A2 /* PrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FCE6107979B8B231C499 /* PrimaryButton.m */; };
 		4C23F4D4EB9208D68B326DBE /* HeadingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F6688740BD040FED82E2 /* HeadingLabel.m */; };
 		4C23F54F7AE20A540F3FB32F /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FEC80A7C1AD563DC1A9D /* ViewModel.m */; };
@@ -59,6 +60,7 @@
 		4C23FC31AFB54663D6974C5D /* InputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputField.h; sourceTree = "<group>"; };
 		4C23FC3E7F90F7A418BFA21A /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		4C23FCE6107979B8B231C499 /* PrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryButton.m; sourceTree = "<group>"; };
+		4C23FD10F4C5350CAC511ADC /* Content.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Content.strings; sourceTree = "<group>"; };
 		4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C23FE2C0B895AE8AC2EBA4F /* InputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputField.m; sourceTree = "<group>"; };
 		4C23FE9C97120C720FCB24CE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +159,14 @@
 				4C23F97A7AD456A0E869EC61 /* TeamType.h */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		4C23F4481ED55F2EBC88D59B /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FD10F4C5350CAC511ADC /* Content.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 		4C23F6D80101D933F03CBD42 /* ViewControllers */ = {
@@ -275,6 +285,7 @@
 				4C23FFA86BFF7908569E5E44 /* Extensions */,
 				4C23F767E701F9ED47DCA430 /* Classes */,
 				4C23F771E5254CFA8FAA75FE /* Protocols */,
+				4C23F4481ED55F2EBC88D59B /* Strings */,
 			);
 			path = "Job Applicator ObjC";
 			sourceTree = "<group>";
@@ -371,6 +382,7 @@
 				D1078EBE2248C6BA0075AF28 /* Assets.xcassets in Resources */,
 				4C23F5768EE3AB6C27A9906E /* Main.storyboard in Resources */,
 				4C23F672C9FC5F79C5F72D2C /* LaunchScreen.storyboard in Resources */,
+				4C23F48FFA3971E57AC03DAC /* Content.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "http://localhost:8080/jobs";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Job Applicator ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BASE_URL = "http://localhost:8080/jobs";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Job Applicator ObjC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
