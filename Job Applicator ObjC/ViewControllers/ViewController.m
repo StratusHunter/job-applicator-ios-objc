@@ -10,14 +10,37 @@
 
 @interface ViewController ()
 
+@property(nonatomic, weak) IBOutlet UITextField *nameField;
+@property(nonatomic, weak) IBOutlet UITextField *emailField;
+@property(nonatomic, weak) IBOutlet UITextField *teamField;
+@property(nonatomic, weak) IBOutlet UITextView *aboutView;
+@property(nonatomic, weak) IBOutlet UITextView *urlView;
+@property(nonatomic, weak) IBOutlet UIButton *submitButton;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)handleApplicationResponse {
+}
 
+#pragma mark IBAction
+
+- (IBAction)submitButtonPressed {
+}
+
+#pragma mark UITextFieldDelegate
+
+- (IBAction)textFieldDidChange:(UITextField *)textField {
+}
+
+#pragma mark UITextViewDelegate
+
+- (void)textViewDidChange:(UITextView *)textView {
+}
 @end

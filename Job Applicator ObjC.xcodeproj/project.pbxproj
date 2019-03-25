@@ -8,8 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4C23F0315C6C3121E3D7765B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FF2BF63096F1093F15EC /* ViewController.m */; };
+		4C23F494E011D8A7BB8DF5A2 /* PrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FCE6107979B8B231C499 /* PrimaryButton.m */; };
+		4C23F4D4EB9208D68B326DBE /* HeadingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F6688740BD040FED82E2 /* HeadingLabel.m */; };
 		4C23F5768EE3AB6C27A9906E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C23FE9C97120C720FCB24CE /* Main.storyboard */; };
 		4C23F672C9FC5F79C5F72D2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */; };
+		4C23F733B322E5DC895D0C17 /* InputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FE2C0B895AE8AC2EBA4F /* InputField.m */; };
+		4C23F9805463D51D0E105869 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F58B4CAA2D1EB69A2E37 /* InputView.m */; };
+		4C23FD41B90046C197CB66A2 /* Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F226FA941ACCF3B0FF72 /* Fonts.m */; };
 		D1078EB62248C6B90075AF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078EB52248C6B90075AF28 /* AppDelegate.m */; };
 		D1078EBE2248C6BA0075AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1078EBD2248C6BA0075AF28 /* Assets.xcassets */; };
 		D1078EC42248C6BA0075AF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078EC32248C6BA0075AF28 /* main.m */; };
@@ -27,10 +32,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C23F226FA941ACCF3B0FF72 /* Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fonts.m; sourceTree = "<group>"; };
+		4C23F3989CE774CD20E6FA3A /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		4C23F58B4CAA2D1EB69A2E37 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		4C23F6688740BD040FED82E2 /* HeadingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadingLabel.m; sourceTree = "<group>"; };
+		4C23F8457D724A4126EB45B1 /* Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
 		4C23FA949C9FC1AB038F70CC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4C23FAECAA960847C45F4DAF /* HeadingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadingLabel.h; sourceTree = "<group>"; };
+		4C23FC31AFB54663D6974C5D /* InputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputField.h; sourceTree = "<group>"; };
+		4C23FCE6107979B8B231C499 /* PrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryButton.m; sourceTree = "<group>"; };
 		4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C23FE2C0B895AE8AC2EBA4F /* InputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputField.m; sourceTree = "<group>"; };
 		4C23FE9C97120C720FCB24CE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4C23FF2BF63096F1093F15EC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4C23FF4A8EA199231C8D8E2E /* PrimaryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimaryButton.h; sourceTree = "<group>"; };
 		D1078EB12248C6B90075AF28 /* Job Applicator ObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Job Applicator ObjC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1078EB42248C6B90075AF28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D1078EB52248C6B90075AF28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,6 +75,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C23F10D7DA78FAADCFC0F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FBBFAAF0816C1D2EFC14 /* HeadingLabel */,
+				4C23F19D1AB7B0A8B13D5ACD /* InputField */,
+				4C23FBC5604F08FCB17948F5 /* InputView */,
+				4C23F220E75D125095BAE4A1 /* PrimaryButton */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4C23F19D1AB7B0A8B13D5ACD /* InputField */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FE2C0B895AE8AC2EBA4F /* InputField.m */,
+				4C23FC31AFB54663D6974C5D /* InputField.h */,
+			);
+			path = InputField;
+			sourceTree = "<group>";
+		};
+		4C23F220E75D125095BAE4A1 /* PrimaryButton */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FCE6107979B8B231C499 /* PrimaryButton.m */,
+				4C23FF4A8EA199231C8D8E2E /* PrimaryButton.h */,
+			);
+			path = PrimaryButton;
+			sourceTree = "<group>";
+		};
+		4C23F25B7D94A5D931265083 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				4C23F226FA941ACCF3B0FF72 /* Fonts.m */,
+				4C23F8457D724A4126EB45B1 /* Fonts.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		4C23F6D80101D933F03CBD42 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +129,24 @@
 				4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4C23FBBFAAF0816C1D2EFC14 /* HeadingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FAECAA960847C45F4DAF /* HeadingLabel.h */,
+				4C23F6688740BD040FED82E2 /* HeadingLabel.m */,
+			);
+			path = HeadingLabel;
+			sourceTree = "<group>";
+		};
+		4C23FBC5604F08FCB17948F5 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				4C23F58B4CAA2D1EB69A2E37 /* InputView.m */,
+				4C23F3989CE774CD20E6FA3A /* InputView.h */,
+			);
+			path = InputView;
 			sourceTree = "<group>";
 		};
 		D1078EA82248C6B90075AF28 = {
@@ -106,6 +177,8 @@
 				D1078EC32248C6BA0075AF28 /* main.m */,
 				4C23F6D80101D933F03CBD42 /* ViewControllers */,
 				4C23F94030FEED9C0DD8771B /* Storyboards */,
+				4C23F10D7DA78FAADCFC0F21 /* Views */,
+				4C23F25B7D94A5D931265083 /* Constants */,
 			);
 			path = "Job Applicator ObjC";
 			sourceTree = "<group>";
@@ -222,6 +295,11 @@
 				D1078EC42248C6BA0075AF28 /* main.m in Sources */,
 				D1078EB62248C6B90075AF28 /* AppDelegate.m in Sources */,
 				4C23F0315C6C3121E3D7765B /* ViewController.m in Sources */,
+				4C23FD41B90046C197CB66A2 /* Fonts.m in Sources */,
+				4C23F4D4EB9208D68B326DBE /* HeadingLabel.m in Sources */,
+				4C23F733B322E5DC895D0C17 /* InputField.m in Sources */,
+				4C23F9805463D51D0E105869 /* InputView.m in Sources */,
+				4C23F494E011D8A7BB8DF5A2 /* PrimaryButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
