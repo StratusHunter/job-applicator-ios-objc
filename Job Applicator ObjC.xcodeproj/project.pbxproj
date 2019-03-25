@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C23F02CB6E715EBEBA9B232 /* JobApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F65BF04F7338105687EC /* JobApplication.m */; };
 		4C23F0315C6C3121E3D7765B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FF2BF63096F1093F15EC /* ViewController.m */; };
 		4C23F3B422D3F08CFF62243C /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F9CB963F22EF1678960E /* NSString+Regex.m */; };
 		4C23F494E011D8A7BB8DF5A2 /* PrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FCE6107979B8B231C499 /* PrimaryButton.m */; };
@@ -38,6 +39,7 @@
 		4C23F226FA941ACCF3B0FF72 /* Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fonts.m; sourceTree = "<group>"; };
 		4C23F3989CE774CD20E6FA3A /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
 		4C23F58B4CAA2D1EB69A2E37 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		4C23F65BF04F7338105687EC /* JobApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobApplication.m; sourceTree = "<group>"; };
 		4C23F6688740BD040FED82E2 /* HeadingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadingLabel.m; sourceTree = "<group>"; };
 		4C23F8457D724A4126EB45B1 /* Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
 		4C23F97A7AD456A0E869EC61 /* TeamType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamType.h; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		4C23FA134F34E89F17C98805 /* TeamType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamType.m; sourceTree = "<group>"; };
 		4C23FA949C9FC1AB038F70CC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4C23FAECAA960847C45F4DAF /* HeadingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadingLabel.h; sourceTree = "<group>"; };
+		4C23FB5AEB1598BE493BB143 /* JobApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobApplication.h; sourceTree = "<group>"; };
 		4C23FC31AFB54663D6974C5D /* InputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputField.h; sourceTree = "<group>"; };
 		4C23FC3E7F90F7A418BFA21A /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		4C23FCE6107979B8B231C499 /* PrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryButton.m; sourceTree = "<group>"; };
@@ -149,6 +152,14 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		4C23F767E701F9ED47DCA430 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FB85CA73E1DFC4A5E5E2 /* JobApplication */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		4C23F94030FEED9C0DD8771B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +167,15 @@
 				4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4C23FB85CA73E1DFC4A5E5E2 /* JobApplication */ = {
+			isa = PBXGroup;
+			children = (
+				4C23F65BF04F7338105687EC /* JobApplication.m */,
+				4C23FB5AEB1598BE493BB143 /* JobApplication.h */,
+			);
+			path = JobApplication;
 			sourceTree = "<group>";
 		};
 		4C23FBBFAAF0816C1D2EFC14 /* HeadingLabel */ = {
@@ -218,6 +238,7 @@
 				4C23F037202DD1ECF95B038B /* ViewModels */,
 				4C23F326F5B0B86B2A81661D /* Enums */,
 				4C23FFA86BFF7908569E5E44 /* Extensions */,
+				4C23F767E701F9ED47DCA430 /* Classes */,
 			);
 			path = "Job Applicator ObjC";
 			sourceTree = "<group>";
@@ -342,6 +363,7 @@
 				4C23F54F7AE20A540F3FB32F /* ViewModel.m in Sources */,
 				4C23FFE0874EE6DD2D695AF1 /* TeamType.m in Sources */,
 				4C23F3B422D3F08CFF62243C /* NSString+Regex.m in Sources */,
+				4C23F02CB6E715EBEBA9B232 /* JobApplication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

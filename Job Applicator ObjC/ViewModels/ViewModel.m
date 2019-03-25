@@ -46,7 +46,7 @@
     return urlList;
 }
 
-- (BOOL)validateApplication:(nonnull NSString *)name :(nonnull NSString *)email :(nonnull NSString *)teams :(nonnull NSString *)about :(nonnull NSString *)urls {
+- (BOOL)validateApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls {
 
     BOOL emailValid = email.length > 0 && [email isEmail];
 
