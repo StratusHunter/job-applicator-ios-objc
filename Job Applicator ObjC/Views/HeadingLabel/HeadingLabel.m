@@ -41,6 +41,6 @@
 
 - (void)drawTextInRect:(CGRect)rect {
 
-    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, {2, 0, 0, 0})];
+    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, UIEdgeInsetsMake(2, 0, 0, 0))];
 }
 @end

@@ -47,7 +47,7 @@
 
     self.titleLabel.font = Fonts.BUTTON_FONT;
 
-    self.titleEdgeInsets = {4, 0, 0, 0};
+    self.titleEdgeInsets = UIEdgeInsetsMake(4, 0, 0, 0);
     self.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
 }
 

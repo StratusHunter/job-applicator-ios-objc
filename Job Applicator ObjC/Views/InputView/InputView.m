@@ -38,7 +38,7 @@
     self.indicatorStyle = UIScrollViewIndicatorStyleWhite;
 
     self.textContainer.lineFragmentPadding = 0;
-    self.textContainerInset = {8, 8, 8, 8};
+    self.textContainerInset = UIEdgeInsetsMake(8, 8, 8, 8);
 
     self.backgroundColor = [[UIColor colorNamed:@"darkJazzBlue"] colorWithAlphaComponent:0.5];
     self.textColor = UIColor.whiteColor;
