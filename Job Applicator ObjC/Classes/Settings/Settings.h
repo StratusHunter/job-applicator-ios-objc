@@ -5,10 +5,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class JobApplication;
+@interface Settings : NSObject
 
-@interface RequestHandler : NSObject
+@property(nonatomic, strong, readonly, nonnull) NSString *baseURL;
 
-- (nonnull NSURLRequest *)applyRequest:(nonnull JobApplication *)application;
++ (instancetype)instance;
 
 @end

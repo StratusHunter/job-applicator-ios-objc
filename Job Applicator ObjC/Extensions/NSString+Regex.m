@@ -15,12 +15,12 @@
 - (BOOL)isValid:(NSString *)regex {
 
     NSError *error = nil;
-    NSRegularExpression *recognizer = [[NSRegularExpression alloc] initWithPattern:regex options:nil error:&error];
+    NSRegularExpression *recognizer = [[NSRegularExpression alloc] initWithPattern:regex options:kNilOptions error:&error];
 
     if (error != nil) {
         return NO;
     }
 
-    return [recognizer matchesInString:self options:nil range:NSMakeRange(0, self.length)].count > 0;
+    return [recognizer matchesInString:self options:kNilOptions range:NSMakeRange(0, self.length)].count > 0;
 }
 @end

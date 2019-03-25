@@ -5,6 +5,7 @@
 
 #import "RequestHandler.h"
 #import "JobApplication.h"
+#import "Settings.h"
 
 @interface RequestHandler ()
 
@@ -13,6 +14,13 @@
 @end
 
 @implementation RequestHandler
+
+- (instancetype)init {
+
+    self = [self initWithURL:[[NSURL alloc] initWithString:Settings.instance.baseURL]];
+
+    return self;
+}
 
 - (instancetype)initWithURL:(NSURL *)url {
 
@@ -26,14 +34,14 @@
     return self;
 }
 
-- (NSURLRequest *)applyRequest:(JobApplication *)application {
+- (nonnull NSURLRequest *)applyRequest:(nonnull JobApplication *)application {
 
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:self.baseURL];
 
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-type"];
-    [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:[application toJSON] options:nil error:nil]];
+    [request setHTTPBody:[NSJSONSerialization dataWithJSONObject:[application toJSON] options:kNilOptions error:nil]];
 
     return request;
 }

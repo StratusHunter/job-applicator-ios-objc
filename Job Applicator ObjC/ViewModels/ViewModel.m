@@ -25,7 +25,7 @@
 
     if (self) {
 
-        self.handler = [[RequestHandler alloc] initWithBaseURL:];
+        self.handler = [RequestHandler new];
         self.session = [NSURLSession sessionWithConfiguration:NSURLSessionConfiguration.defaultSessionConfiguration];
     }
 
@@ -59,6 +59,7 @@
     [urlStringList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
 
         NSURL *urlFromString = [[NSURL alloc] initWithString:obj];
+
         if (urlFromString != nil) {
 
             [urlList addObject:urlFromString];
@@ -106,7 +107,7 @@
 
                                          if (error != nil) {
 
-                                             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:nil error:nil];
+                                             NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
                                              responseApplication = [[JobApplication alloc] initWithJSON:json];
                                          }
 
