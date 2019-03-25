@@ -6,6 +6,7 @@
 #import "ViewModel.h"
 #import "TeamType.h"
 #import "NSString+Regex.h"
+#import "JobApplication.h"
 
 @implementation ViewModel {
 }
@@ -36,10 +37,10 @@
 
     [urlStringList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
 
-        NSURL *url = [[NSURL alloc] initWithString:obj];
-        if (url != nil) {
+        NSURL *urlFromString = [[NSURL alloc] initWithString:obj];
+        if (urlFromString != nil) {
 
-            [urlList addObject:url];
+            [urlList addObject:urlFromString];
         }
     }];
 
@@ -56,4 +57,20 @@
     return name.length > 0 && emailValid && teamList.count > 0 && about.length > 0 && urlList.count > 0;
 }
 
+- (JobApplication *)createApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls {
+
+    NSMutableArray <NSString *> *teamList = [NSMutableArray new];
+    [[self createTeamList:teams] enumerateObjectsUsingBlock:^(TeamType *obj, NSUInteger idx, BOOL *stop) {
+
+        [teamList addObject:obj.string];
+    }];
+
+    NSMutableArray <NSString *> *urlList = [NSMutableArray new];
+    [[self createURLList:urls] enumerateObjectsUsingBlock:^(NSURL *obj, NSUInteger idx, BOOL *stop) {
+
+        [urlList addObject:obj.absoluteString];
+    }];
+
+    return [[JobApplication alloc] initWithName:name email:email about:about teams:teamList urls:urlList];
+}
 @end
