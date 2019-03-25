@@ -11,8 +11,7 @@ static NSString const *aboutKey = @"about";
 static NSString const *teamsKey = @"teams";
 static NSString const *urlsKey = @"urls";
 
-@implementation JobApplication {
-}
+@implementation JobApplication
 
 - (instancetype)initWithName:(NSString *)name email:(NSString *)email about:(NSString *)about teams:(NSArray <NSString *> *)teams urls:(NSArray <NSString *> *)urls {
 
@@ -20,33 +19,37 @@ static NSString const *urlsKey = @"urls";
 
     if (self) {
 
-        _name = name;
-        _email = email;
-        _about = about;
-        _teams = teams;
-        _urls = urls;
+        self.name = name;
+        self.email = email;
+        self.about = about;
+        self.teams = teams;
+        self.urls = urls;
     }
 
     return self;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+- (instancetype)initWithJSON:(NSDictionary *)json {
 
-    NSString *name = [aDecoder decodeObjectForKey:nameKey] ?: @"";
-    NSString *email = [aDecoder decodeObjectForKey:emailKey] ?: @"";
-    NSString *about = [aDecoder decodeObjectForKey:aboutKey] ?: @"";
-    NSArray *teams = [aDecoder decodeObjectForKey:teamsKey] ?: @[];
-    NSArray *urls = [aDecoder decodeObjectForKey:urlsKey] ?: @[];
+    NSString *name = json[nameKey] ?: @"";
+    NSString *email = json[emailKey] ?: @"";
+    NSString *about = json[aboutKey] ?: @"";
+    NSArray *teams = json[teamsKey] ?: @[];
+    NSArray *urls = json[urlsKey] ?: @[];
 
-    return [[JobApplication alloc] initWithName:name email:email about:about teams:teams urls:urls];
+    return [self initWithName:name email:email about:about teams:teams urls:urls];
 }
 
-- (void)encodeWithCoder:(NSCoder *)aCoder {
+- (NSDictionary *)toJSON {
 
-    [aCoder encodeObject:self.name forKey:nameKey];
-    [aCoder encodeObject:self.email forKey:emailKey];
-    [aCoder encodeObject:self.about forKey:aboutKey];
-    [aCoder encodeObject:self.teams forKey:teamsKey];
-    [aCoder encodeObject:self.urls forKey:urlsKey];
+    return @{
+            nameKey: self.name,
+            nameKey: self.name,
+            emailKey: self.email,
+            aboutKey: self.about,
+            teamsKey: self.teams,
+            urlsKey: self.urls
+    };
 }
+
 @end

@@ -4,8 +4,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSON.h"
 
-@interface JobApplication : NSObject <NSCoding>
+@interface JobApplication : NSObject <JSON>
 
 @property(nonatomic, strong, nonnull) NSString *name;
 @property(nonatomic, strong, nonnull) NSString *email;

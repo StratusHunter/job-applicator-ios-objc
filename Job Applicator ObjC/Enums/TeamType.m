@@ -5,10 +5,7 @@
 
 #import "TeamType.h"
 
-static NSArray<NSString *> const *stringValues =
-
-@implementation TeamType {
-}
+@implementation TeamType
 
 + (nullable TeamType *)createWithString:(NSString *)rawValue {
 

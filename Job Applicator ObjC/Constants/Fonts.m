@@ -8,8 +8,7 @@
 static NSString *const ROCKWELL = @"Rockwell";
 static NSString *const ROCKWELL_BOLD = @"Rockwell-Bold";
 
-@implementation Fonts {
-}
+@implementation Fonts
 
 + (UIFont *)HEADING_FONT {
 

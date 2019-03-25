@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ViewModel.h"
 
 @interface ViewController ()
 
@@ -16,6 +17,8 @@
 @property(nonatomic, weak) IBOutlet UITextView *aboutView;
 @property(nonatomic, weak) IBOutlet UITextView *urlView;
 @property(nonatomic, weak) IBOutlet UIButton *submitButton;
+
+@property (nonatomic, strong) ViewModel *viewModel;
 
 @end
 
