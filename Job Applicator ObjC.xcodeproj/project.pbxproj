@@ -20,6 +20,7 @@
 		4C23F733B322E5DC895D0C17 /* InputField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FE2C0B895AE8AC2EBA4F /* InputField.m */; };
 		4C23F84954F37047132B4A70 /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F92A940BD71AF1085393 /* RequestHandler.m */; };
 		4C23F9805463D51D0E105869 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F58B4CAA2D1EB69A2E37 /* InputView.m */; };
+		4C23F9AAF81F49A917A3A247 /* KeyboardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F036B0028DE2B9352701 /* KeyboardHandler.m */; };
 		4C23FD41B90046C197CB66A2 /* Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F226FA941ACCF3B0FF72 /* Fonts.m */; };
 		4C23FFE0874EE6DD2D695AF1 /* TeamType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FA134F34E89F17C98805 /* TeamType.m */; };
 		D1078EB62248C6B90075AF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078EB52248C6B90075AF28 /* AppDelegate.m */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C23F036B0028DE2B9352701 /* KeyboardHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardHandler.m; sourceTree = "<group>"; };
 		4C23F226FA941ACCF3B0FF72 /* Fonts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fonts.m; sourceTree = "<group>"; };
 		4C23F26C74BFD1F81C8D471D /* RequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestHandler.h; sourceTree = "<group>"; };
 		4C23F3989CE774CD20E6FA3A /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 		4C23FC3E7F90F7A418BFA21A /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
 		4C23FCE6107979B8B231C499 /* PrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryButton.m; sourceTree = "<group>"; };
 		4C23FD10F4C5350CAC511ADC /* Content.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Content.strings; sourceTree = "<group>"; };
+		4C23FDAB49071177DDEAF7D9 /* KeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHandler.h; sourceTree = "<group>"; };
 		4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C23FE2C0B895AE8AC2EBA4F /* InputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputField.m; sourceTree = "<group>"; };
 		4C23FE9C97120C720FCB24CE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -184,6 +187,7 @@
 				4C23FB85CA73E1DFC4A5E5E2 /* JobApplication */,
 				4C23FD5F9DA29CF8A5830527 /* RequestHandler */,
 				4C23F185FCC232D5FB6D4795 /* Settings */,
+				4C23FF2D2FF2E8B4E3BAA8AA /* KeyboardHandler */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -239,6 +243,15 @@
 				4C23F26C74BFD1F81C8D471D /* RequestHandler.h */,
 			);
 			path = RequestHandler;
+			sourceTree = "<group>";
+		};
+		4C23FF2D2FF2E8B4E3BAA8AA /* KeyboardHandler */ = {
+			isa = PBXGroup;
+			children = (
+				4C23F036B0028DE2B9352701 /* KeyboardHandler.m */,
+				4C23FDAB49071177DDEAF7D9 /* KeyboardHandler.h */,
+			);
+			path = KeyboardHandler;
 			sourceTree = "<group>";
 		};
 		4C23FFA86BFF7908569E5E44 /* Extensions */ = {
@@ -414,6 +427,7 @@
 				4C23F02CB6E715EBEBA9B232 /* JobApplication.m in Sources */,
 				4C23F84954F37047132B4A70 /* RequestHandler.m in Sources */,
 				4C23F5ABE25341223FDABE78 /* Settings.m in Sources */,
+				4C23F9AAF81F49A917A3A247 /* KeyboardHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
