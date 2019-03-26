@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "ViewModel.h"
 #import "JobApplication.h"
-#import "KeyboardHandler.h"
 
 @interface ViewController ()
 
@@ -23,7 +22,6 @@
 @property(nonatomic, weak) IBOutlet UIButton *submitButton;
 
 @property(nonatomic, strong) ViewModel *viewModel;
-@property(nonatomic, strong) KeyboardHandler *keyboardHandler;
 
 @end
 
@@ -33,7 +31,6 @@
 
     [super viewDidLoad];
 
-    self.keyboardHandler = [[KeyboardHandler alloc] initWithScrollView:self.scrollView];
     self.viewModel = [ViewModel new];
 
     [self handleTextChanged];
