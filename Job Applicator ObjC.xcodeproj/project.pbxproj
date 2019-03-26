@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C23F02CB6E715EBEBA9B232 /* JobApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F65BF04F7338105687EC /* JobApplication.m */; };
 		4C23F0315C6C3121E3D7765B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FF2BF63096F1093F15EC /* ViewController.m */; };
-		4C23F3B422D3F08CFF62243C /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F9CB963F22EF1678960E /* NSString+Regex.m */; };
+		4C23F4671C661D1545A794BE /* ViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F79E27D2CA77BC481508 /* ViewModelTests.m */; };
 		4C23F48FFA3971E57AC03DAC /* Content.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C23FD10F4C5350CAC511ADC /* Content.strings */; };
 		4C23F494E011D8A7BB8DF5A2 /* PrimaryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FCE6107979B8B231C499 /* PrimaryButton.m */; };
 		4C23F4D4EB9208D68B326DBE /* HeadingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F6688740BD040FED82E2 /* HeadingLabel.m */; };
@@ -21,12 +21,13 @@
 		4C23F84954F37047132B4A70 /* RequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F92A940BD71AF1085393 /* RequestHandler.m */; };
 		4C23F9805463D51D0E105869 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F58B4CAA2D1EB69A2E37 /* InputView.m */; };
 		4C23F9AAF81F49A917A3A247 /* KeyboardHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F036B0028DE2B9352701 /* KeyboardHandler.m */; };
+		4C23FAB2517A7284A6DF0228 /* NSURL+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FC5BA13C99F5CFFA5DCC /* NSURL+Valid.m */; };
 		4C23FD41B90046C197CB66A2 /* Fonts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F226FA941ACCF3B0FF72 /* Fonts.m */; };
+		4C23FEB3A65F59891AD06D20 /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FAFDF68B0B7EBEB4C8DD /* NSString+Regex.m */; };
 		4C23FFE0874EE6DD2D695AF1 /* TeamType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FA134F34E89F17C98805 /* TeamType.m */; };
 		D1078EB62248C6B90075AF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078EB52248C6B90075AF28 /* AppDelegate.m */; };
 		D1078EBE2248C6BA0075AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1078EBD2248C6BA0075AF28 /* Assets.xcassets */; };
 		D1078EC42248C6BA0075AF28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078EC32248C6BA0075AF28 /* main.m */; };
-		D1078ECE2248C6BA0075AF28 /* Job_Applicator_ObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078ECD2248C6BA0075AF28 /* Job_Applicator_ObjCTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,25 +47,28 @@
 		4C23F3989CE774CD20E6FA3A /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
 		4C23F473BC82024F9B02CC2C /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		4C23F58B4CAA2D1EB69A2E37 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		4C23F58F9D4320E3AD85A125 /* NSString+Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regex.h"; sourceTree = "<group>"; };
 		4C23F65BF04F7338105687EC /* JobApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JobApplication.m; sourceTree = "<group>"; };
 		4C23F6688740BD040FED82E2 /* HeadingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadingLabel.m; sourceTree = "<group>"; };
+		4C23F79E27D2CA77BC481508 /* ViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelTests.m; sourceTree = "<group>"; };
 		4C23F8457D724A4126EB45B1 /* Fonts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fonts.h; sourceTree = "<group>"; };
 		4C23F87605EC2CBE12E566B5 /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		4C23F92A940BD71AF1085393 /* RequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHandler.m; sourceTree = "<group>"; };
 		4C23F97A7AD456A0E869EC61 /* TeamType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamType.h; sourceTree = "<group>"; };
-		4C23F9C84FA206C0C8015E31 /* NSString+Regex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Regex.h"; sourceTree = "<group>"; };
-		4C23F9CB963F22EF1678960E /* NSString+Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regex.m"; sourceTree = "<group>"; };
 		4C23FA134F34E89F17C98805 /* TeamType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamType.m; sourceTree = "<group>"; };
 		4C23FA949C9FC1AB038F70CC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4C23FAECAA960847C45F4DAF /* HeadingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadingLabel.h; sourceTree = "<group>"; };
+		4C23FAFDF68B0B7EBEB4C8DD /* NSString+Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regex.m"; sourceTree = "<group>"; };
 		4C23FB5AEB1598BE493BB143 /* JobApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JobApplication.h; sourceTree = "<group>"; };
 		4C23FBF56A08B318B184FBA9 /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
 		4C23FC31AFB54663D6974C5D /* InputField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputField.h; sourceTree = "<group>"; };
 		4C23FC3E7F90F7A418BFA21A /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		4C23FC5BA13C99F5CFFA5DCC /* NSURL+Valid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Valid.m"; sourceTree = "<group>"; };
 		4C23FCE6107979B8B231C499 /* PrimaryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrimaryButton.m; sourceTree = "<group>"; };
 		4C23FD10F4C5350CAC511ADC /* Content.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Content.strings; sourceTree = "<group>"; };
 		4C23FDAB49071177DDEAF7D9 /* KeyboardHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardHandler.h; sourceTree = "<group>"; };
 		4C23FDC2B48C502BE97B963E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C23FDE1E4B8042832FFE4D0 /* NSURL+Valid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Valid.h"; sourceTree = "<group>"; };
 		4C23FE2C0B895AE8AC2EBA4F /* InputField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputField.m; sourceTree = "<group>"; };
 		4C23FE9C97120C720FCB24CE /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		4C23FEC80A7C1AD563DC1A9D /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
@@ -77,7 +81,6 @@
 		D1078EC22248C6BA0075AF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D1078EC32248C6BA0075AF28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1078EC92248C6BA0075AF28 /* Job Applicator ObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Job Applicator ObjCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1078ECD2248C6BA0075AF28 /* Job_Applicator_ObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Job_Applicator_ObjCTests.m; sourceTree = "<group>"; };
 		D1078ECF2248C6BA0075AF28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +122,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4C23F12A41E27E2A91DD9188 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4C23F79E27D2CA77BC481508 /* ViewModelTests.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		4C23F185FCC232D5FB6D4795 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +148,15 @@
 			path = InputField;
 			sourceTree = "<group>";
 		};
+		4C23F1EEB34FCF038FB973AC /* NSString+Regex */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FAFDF68B0B7EBEB4C8DD /* NSString+Regex.m */,
+				4C23F58F9D4320E3AD85A125 /* NSString+Regex.h */,
+			);
+			path = "NSString+Regex";
+			sourceTree = "<group>";
+		};
 		4C23F220E75D125095BAE4A1 /* PrimaryButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +164,15 @@
 				4C23FF4A8EA199231C8D8E2E /* PrimaryButton.h */,
 			);
 			path = PrimaryButton;
+			sourceTree = "<group>";
+		};
+		4C23F2274906DDF3A406ABC1 /* NSURL+Valid */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FC5BA13C99F5CFFA5DCC /* NSURL+Valid.m */,
+				4C23FDE1E4B8042832FFE4D0 /* NSURL+Valid.h */,
+			);
+			path = "NSURL+Valid";
 			sourceTree = "<group>";
 		};
 		4C23F25B7D94A5D931265083 /* Constants */ = {
@@ -257,8 +286,8 @@
 		4C23FFA86BFF7908569E5E44 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4C23F9CB963F22EF1678960E /* NSString+Regex.m */,
-				4C23F9C84FA206C0C8015E31 /* NSString+Regex.h */,
+				4C23F1EEB34FCF038FB973AC /* NSString+Regex */,
+				4C23F2274906DDF3A406ABC1 /* NSURL+Valid */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -306,8 +335,8 @@
 		D1078ECC2248C6BA0075AF28 /* Job Applicator ObjCTests */ = {
 			isa = PBXGroup;
 			children = (
-				D1078ECD2248C6BA0075AF28 /* Job_Applicator_ObjCTests.m */,
 				D1078ECF2248C6BA0075AF28 /* Info.plist */,
+				4C23F12A41E27E2A91DD9188 /* ViewModels */,
 			);
 			path = "Job Applicator ObjCTests";
 			sourceTree = "<group>";
@@ -423,11 +452,12 @@
 				4C23F494E011D8A7BB8DF5A2 /* PrimaryButton.m in Sources */,
 				4C23F54F7AE20A540F3FB32F /* ViewModel.m in Sources */,
 				4C23FFE0874EE6DD2D695AF1 /* TeamType.m in Sources */,
-				4C23F3B422D3F08CFF62243C /* NSString+Regex.m in Sources */,
 				4C23F02CB6E715EBEBA9B232 /* JobApplication.m in Sources */,
 				4C23F84954F37047132B4A70 /* RequestHandler.m in Sources */,
 				4C23F5ABE25341223FDABE78 /* Settings.m in Sources */,
 				4C23F9AAF81F49A917A3A247 /* KeyboardHandler.m in Sources */,
+				4C23FEB3A65F59891AD06D20 /* NSString+Regex.m in Sources */,
+				4C23FAB2517A7284A6DF0228 /* NSURL+Valid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +465,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1078ECE2248C6BA0075AF28 /* Job_Applicator_ObjCTests.m in Sources */,
+				4C23F4671C661D1545A794BE /* ViewModelTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

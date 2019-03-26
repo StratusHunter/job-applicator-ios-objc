@@ -8,6 +8,7 @@
 #import "NSString+Regex.h"
 #import "JobApplication.h"
 #import "RequestHandler.h"
+#import "NSURL+Valid.h"
 
 @interface ViewModel ()
 
@@ -61,7 +62,7 @@
         NSString *escapedString = [obj stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
         NSURL *urlFromString = [[NSURL alloc] initWithString:escapedString];
 
-        if (urlFromString != nil) {
+        if ([urlFromString isValid]) {
 
             [urlList addObject:urlFromString];
         }
