@@ -14,6 +14,8 @@ typedef NS_ENUM(NSUInteger, Team) {
     design
 };
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface TeamType : NSObject
 
 @property(nonatomic, assign, readonly) Team team;
@@ -23,3 +25,5 @@ typedef NS_ENUM(NSUInteger, Team) {
 - (instancetype)initWithTeam:(Team)team;
 - (NSString *)string;
 @end
+
+NS_ASSUME_NONNULL_END

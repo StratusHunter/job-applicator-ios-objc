@@ -5,10 +5,14 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface Settings : NSObject
 
-@property(nonatomic, strong, readonly, nonnull) NSString *baseURL;
+@property(nonatomic, strong, readonly) NSString *baseURL;
 
 + (instancetype)instance;
 
 @end
+
+NS_ASSUME_NONNULL_END

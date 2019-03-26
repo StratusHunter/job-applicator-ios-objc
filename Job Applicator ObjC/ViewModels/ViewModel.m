@@ -58,7 +58,7 @@
 
     [urlStringList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
 
-        NSString *escapedString = [obj stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+        NSString *escapedString = [obj stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet];
         NSURL *urlFromString = [[NSURL alloc] initWithString:escapedString];
 
         if (urlFromString != nil) {
@@ -70,7 +70,7 @@
     return urlList;
 }
 
-- (BOOL)validateApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls {
+- (BOOL)validateApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls {
 
     BOOL emailValid = email.length > 0 && [email isEmail];
 
@@ -80,7 +80,7 @@
     return name.length > 0 && emailValid && teamList.count > 0 && about.length > 0 && urlList.count > 0;
 }
 
-- (nonnull JobApplication *)createApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls {
+- (JobApplication *)createApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls {
 
     NSMutableArray <NSString *> *teamList = [NSMutableArray new];
     [[self createTeamList:teams] enumerateObjectsUsingBlock:^(TeamType *obj, NSUInteger idx, BOOL *stop) {
@@ -97,7 +97,7 @@
     return [[JobApplication alloc] initWithName:name email:email about:about teams:teamList urls:urlList];
 }
 
-- (void)performApplyRequest:(nonnull JobApplication *)application completionHandler:(void (^)(JobApplication *, NSError *))completionHandler {
+- (void)performApplyRequest:(JobApplication *)application completionHandler:(void (^)(JobApplication *__nullable, NSError *__nullable))completionHandler {
 
     [self.applyTask cancel];
 

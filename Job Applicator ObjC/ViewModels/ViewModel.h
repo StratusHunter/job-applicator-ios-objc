@@ -7,10 +7,14 @@
 
 @class JobApplication;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface ViewModel : NSObject
 
-- (BOOL)validateApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls;
-- (nonnull JobApplication *)createApplicationWithName:(nonnull NSString *)name email:(nonnull NSString *)email teams:(nonnull NSString *)teams about:(nonnull NSString *)about urls:(nonnull NSString *)urls;
-- (void)performApplyRequest:(nonnull JobApplication *)application completionHandler:(void (^)(JobApplication *, NSError *))completionHandler;
+- (BOOL)validateApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls;
+- (JobApplication *)createApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls;
+- (void)performApplyRequest:(JobApplication *)application completionHandler:(void (^)(JobApplication * __nullable, NSError * __nullable))completionHandler;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -9,7 +9,7 @@
 
 @interface RequestHandler ()
 
-@property(nonatomic, strong) NSURL *baseURL;
+@property(nonatomic, strong, nonnull) NSURL *baseURL;
 
 @end
 
@@ -34,7 +34,7 @@
     return self;
 }
 
-- (nonnull NSURLRequest *)applyRequest:(nonnull JobApplication *)application {
+- (NSURLRequest *)applyRequest:(JobApplication *)application {
 
     NSURL *pathURL = [self.baseURL URLByAppendingPathComponent:@"apply"];
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:pathURL];

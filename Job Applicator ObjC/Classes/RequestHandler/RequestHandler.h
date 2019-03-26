@@ -6,9 +6,14 @@
 #import <UIKit/UIKit.h>
 
 @class JobApplication;
+NS_ASSUME_NONNULL_BEGIN
 
 @interface RequestHandler : NSObject
 
-- (nonnull NSURLRequest *)applyRequest:(nonnull JobApplication *)application;
+- (instancetype)init;
+- (instancetype)initWithURL:(NSURL *)url;
+- (NSURLRequest *)applyRequest:(JobApplication *)application;
 
 @end
+
+NS_ASSUME_NONNULL_END
