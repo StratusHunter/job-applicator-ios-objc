@@ -1,16 +1,26 @@
 PODS:
+  - Giotto (0.3.3):
+    - Giotto/Core (= 0.3.3)
+  - Giotto/Core (0.3.3)
+  - R.objc (0.8.1)
   - TPKeyboardAvoiding (1.3.2)
 
 DEPENDENCIES:
+  - Giotto (= 0.3.3)
+  - R.objc (= 0.8.1)
   - TPKeyboardAvoiding (= 1.3.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Giotto
+    - R.objc
     - TPKeyboardAvoiding
 
 SPEC CHECKSUMS:
+  Giotto: 1e51aa3cd2adcf8bc303ca99756056e18d031e27
+  R.objc: 0770d485ab8322ebf411fc5fa38501ab7d46b22c
   TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
 
-PODFILE CHECKSUM: d3c15b83a49d001e673c59ef0e417b3a78ba4770
+PODFILE CHECKSUM: d9abe91a51fe24fcc122fe2666189ab03d701f2d
 
 COCOAPODS: 1.5.3

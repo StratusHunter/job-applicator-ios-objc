@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,8 +140,10 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="0WB-5m-RgB" firstAttribute="top" secondItem="oq8-1Q-mFU" secondAttribute="top" constant="16" id="3GS-6Q-mkM"/>
                                     <constraint firstAttribute="bottom" secondItem="0WB-5m-RgB" secondAttribute="bottom" constant="16" id="BoZ-xt-SmR"/>
@@ -155,7 +156,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" name="JazzBlue"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oq8-1Q-mFU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="548-7w-5FJ"/>
                             <constraint firstAttribute="bottom" secondItem="oq8-1Q-mFU" secondAttribute="bottom" id="8Xz-wX-NFL"/>
@@ -178,9 +179,4 @@
             </objects>
         </scene>
     </scenes>
-    <resources>
-        <namedColor name="JazzBlue">
-            <color red="0.066666666666666666" green="0.45490196078431372" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

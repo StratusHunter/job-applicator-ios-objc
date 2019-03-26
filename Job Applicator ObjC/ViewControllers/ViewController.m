@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ViewModel.h"
 #import "JobApplication.h"
+#import "R.h"
 
 @interface ViewController ()
 
@@ -31,6 +32,7 @@
 
     [super viewDidLoad];
 
+    self.view.backgroundColor = R.theme.constants.COLOR_JAZZBLUE;
     self.viewModel = [ViewModel new];
 
     [self handleTextChanged];
@@ -51,23 +53,23 @@
 
     if (application != nil) {
 
-        response = NSLocalizedStringFromTable(@"applicationReceived", @"Content", nil);
+        response = R.string.content.applicationReceived;
         NSLog(@"%@: %@", response, application);
     }
     else {
 
-        response = NSLocalizedStringFromTable(@"applicationError", @"Content", nil);
+        response = R.string.content.applicationError;
         NSLog(@"%@: %@", response, error);
     }
 
     if (response != nil) {
 
         UIAlertController *controller = [UIAlertController alertControllerWithTitle:response message:nil preferredStyle:UIAlertControllerStyleAlert];
-        [controller addAction:[UIAlertAction actionWithTitle:NSLocalizedStringFromTable(@"ok", @"Content", nil) style:UIAlertActionStyleDefault handler:nil]];
-        controller.view.tintColor = [UIColor colorNamed:@"DarkJazzBlue"];
+        [controller addAction:[UIAlertAction actionWithTitle:R.string.content.ok style:UIAlertActionStyleDefault handler:nil]];
+        controller.view.tintColor = R.theme.constants.COLOR_DARKJAZZBLUE;
         [self presentViewController:controller animated:YES completion:^{
 
-            controller.view.tintColor = [UIColor colorNamed:@"DarkJazzBlue"];
+            controller.view.tintColor = R.theme.constants.COLOR_DARKJAZZBLUE;
         }];
     }
 }

@@ -4,7 +4,7 @@
 //
 
 #import "InputField.h"
-#import "Fonts.h"
+#import "R.h"
 
 static const UIEdgeInsets edgeInset = {8, 8, 8, 8};
 
@@ -39,11 +39,11 @@ static const UIEdgeInsets edgeInset = {8, 8, 8, 8};
 
     self.borderStyle = UITextBorderStyleNone;
 
-    self.backgroundColor = [[UIColor colorNamed:@"DarkJazzBlue"] colorWithAlphaComponent:0.5f];
+    self.backgroundColor = [R.theme.constants.COLOR_DARKJAZZBLUE colorWithAlphaComponent:0.5f];
     self.textColor = UIColor.whiteColor;
     self.tintColor = UIColor.whiteColor;
 
-    self.font = Fonts.INPUT_FONT;
+    self.font = R.theme.constants.FONT_INPUT;
 }
 
 - (CGRect)textRectForBounds:(CGRect)bounds {

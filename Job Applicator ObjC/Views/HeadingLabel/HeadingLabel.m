@@ -4,7 +4,7 @@
 //
 
 #import "HeadingLabel.h"
-#import "Fonts.h"
+#import "R.h"
 
 @implementation HeadingLabel {
 }
@@ -36,7 +36,7 @@
 - (void)setup {
 
     self.textColor = UIColor.whiteColor;
-    self.font = Fonts.HEADING_FONT;
+    self.font = R.theme.constants.FONT_HEADING;
 }
 
 - (void)drawTextInRect:(CGRect)rect {

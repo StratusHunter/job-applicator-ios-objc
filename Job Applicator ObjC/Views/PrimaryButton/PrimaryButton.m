@@ -4,7 +4,7 @@
 //
 
 #import "PrimaryButton.h"
-#import "Fonts.h"
+#import "R.h"
 
 @implementation PrimaryButton {
 }
@@ -43,9 +43,9 @@
 
     self.backgroundColor = UIColor.whiteColor;
 
-    [self setTitleColor:[UIColor colorNamed:@"jazzBlue"] forState:UIControlStateNormal];
+    [self setTitleColor:R.theme.constants.COLOR_JAZZBLUE forState:UIControlStateNormal];
 
-    self.titleLabel.font = Fonts.BUTTON_FONT;
+    self.titleLabel.font = R.theme.constants.FONT_BUTTON;
 
     self.titleEdgeInsets = UIEdgeInsetsMake(4, 0, 0, 0);
     self.contentVerticalAlignment = UIControlContentVerticalAlignmentFill;
