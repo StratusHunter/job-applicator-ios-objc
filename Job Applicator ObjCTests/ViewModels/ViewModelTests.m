@@ -94,11 +94,13 @@
                                                               teams:self.team
                                                               about:self.about
                                                                urls:self.url];
+
     BOOL teamInvalid = [self.viewModel validateApplicationWithName:self.aName
                                                              email:self.email
                                                              teams:@"Not a team"
                                                              about:self.about
                                                               urls:self.url];
+
     BOOL urlInvalid = [self.viewModel validateApplicationWithName:self.aName
                                                             email:self.email
                                                             teams:self.team
@@ -139,25 +141,5 @@
     XCTAssertEqual(application.teams.count, 2, "Unexpected team array size");
     XCTAssertEqual(application.urls.count, 2, "Unexpected URL array size");
 }
-/*
-    func test_performApplyRequest_withValidData_assertEqual() throws {
 
-        let application = JobApplication(name: aName, email: email, about: about, urls: [url], teams: [team])
-
-        let response = try! viewModel.performApplyRequest(application: application).toBlocking().first()!
-
-        switch (response) {
-
-            case .success(let app):
-
-                XCTAssertEqual(app.name, application.name, "Name property not mapped correctly")
-                XCTAssertEqual(app.email, application.email, "Email property not mapped correctly")
-                XCTAssertEqual(app.about, application.about, "About property not mapped correctly")
-                XCTAssertEqual(app.teams.first, application.teams.first, "Team property not mapped correctly")
-                XCTAssertEqual(app.urls.first, application.urls.first, "URL property not mapped correctly")
-            case .error:
-
-                XCTFail("Request failed")
-        }
-    }*/
 @end

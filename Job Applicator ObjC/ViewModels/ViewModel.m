@@ -22,12 +22,19 @@
 
 - (instancetype)init {
 
+    self = [self initWithSession:[NSURLSession sessionWithConfiguration:NSURLSessionConfiguration.defaultSessionConfiguration]];
+
+    return self;
+}
+
+- (instancetype)initWithSession:(NSURLSession *)session {
+
     self = [super init];
 
     if (self) {
 
         self.handler = [RequestHandler new];
-        self.session = [NSURLSession sessionWithConfiguration:NSURLSessionConfiguration.defaultSessionConfiguration];
+        self.session = session;
     }
 
     return self;

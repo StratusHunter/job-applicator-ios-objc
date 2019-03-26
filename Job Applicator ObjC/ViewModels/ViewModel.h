@@ -11,9 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewModel : NSObject
 
+- (instancetype)initWithSession:(NSURLSession *)session;
+
 - (BOOL)validateApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls;
 - (JobApplication *)createApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls;
-- (void)performApplyRequest:(JobApplication *)application completionHandler:(void (^)(JobApplication * __nullable, NSError * __nullable))completionHandler;
+- (void)performApplyRequest:(JobApplication *)application completionHandler:(void (^)(JobApplication *__nullable, NSError *__nullable))completionHandler;
 
 @end
 
