@@ -40,23 +40,23 @@
     return self;
 }
 
-- (nonnull NSArray<TeamType *> *)createTeamList:(nonnull NSString *)team {
+- (nonnull NSArray<Team> *)createTeamList:(nonnull NSString *)team {
 
     NSArray<NSString *> *teamList = (team.length > 0) ? [team componentsSeparatedByString:@","] : @[];
-    NSMutableArray <TeamType *> *teamTypeArray = [NSMutableArray new];
+    NSMutableArray <Team> *teamArray = [NSMutableArray new];
 
-    [teamList enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
+    for (NSString *teamString in teamList) {
 
-        NSString *noSpacesObj = [obj stringByReplacingOccurrencesOfString:@" " withString:@""];
-        TeamType *teamType = [TeamType createWithString:noSpacesObj];
+        NSString *noSpacesString = [teamString stringByReplacingOccurrencesOfString:@" " withString:@""];
+        Team team = [TeamType teamWithString:noSpacesString];
 
-        if (teamType != nil) {
+        if (team != nil) {
 
-            [teamTypeArray addObject:[TeamType createWithString:noSpacesObj]];
+            [teamArray addObject:team];
         }
-    }];
-
-    return teamTypeArray;
+    }
+    
+    return teamArray;
 }
 
 - (nonnull NSArray<NSURL *> *)createURLList:(nonnull NSString *)url {
@@ -90,19 +90,13 @@
 
 - (JobApplication *)createApplicationWithName:(NSString *)name email:(NSString *)email teams:(NSString *)teams about:(NSString *)about urls:(NSString *)urls {
 
-    NSMutableArray <NSString *> *teamList = [NSMutableArray new];
-    [[self createTeamList:teams] enumerateObjectsUsingBlock:^(TeamType *obj, NSUInteger idx, BOOL *stop) {
-
-        [teamList addObject:obj.string];
-    }];
-
     NSMutableArray <NSString *> *urlList = [NSMutableArray new];
-    [[self createURLList:urls] enumerateObjectsUsingBlock:^(NSURL *obj, NSUInteger idx, BOOL *stop) {
+    for (NSURL *url in [self createURLList:urls]) {
 
-        [urlList addObject:obj.absoluteString];
-    }];
+        [urlList addObject:url.absoluteString];
+    }
 
-    return [[JobApplication alloc] initWithName:name email:email about:about teams:teamList urls:urlList];
+    return [[JobApplication alloc] initWithName:name email:email about:about teams:[self createTeamList:teams] urls:urlList];
 }
 
 - (void)performApplyRequest:(JobApplication *)application completionHandler:(void (^)(JobApplication *__nullable, NSError *__nullable))completionHandler {

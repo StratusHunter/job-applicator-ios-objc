@@ -6,24 +6,21 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, Team) {
-    android,
-    ios,
-    backend,
-    frontend,
-    design
-};
-
 NS_ASSUME_NONNULL_BEGIN
+
+typedef NSString *Team NS_TYPED_ENUM;
+static Team const TeamAndroid = @"android";
+static Team const TeamIos = @"ios";
+static Team const TeamBackend = @"backend";
+static Team const TeamFrontend = @"frontend";
+static Team const TeamDesign = @"design";
+//Update allTeams when new team added
 
 @interface TeamType : NSObject
 
-@property(nonatomic, assign, readonly) Team team;
++ (NSArray<Team> *)allTeams;
++ (nullable Team)teamWithString:(NSString *)rawValue;
 
-+ (nullable TeamType *)createWithString:(NSString *)rawValue;
-
-- (instancetype)initWithTeam:(Team)team;
-- (NSString *)string;
 @end
 
 NS_ASSUME_NONNULL_END

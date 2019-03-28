@@ -23,6 +23,7 @@
 		4C23F9805463D51D0E105869 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23F58B4CAA2D1EB69A2E37 /* InputView.m */; };
 		4C23FAB2517A7284A6DF0228 /* NSURL+Valid.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FC5BA13C99F5CFFA5DCC /* NSURL+Valid.m */; };
 		4C23FEB3A65F59891AD06D20 /* NSString+Regex.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FAFDF68B0B7EBEB4C8DD /* NSString+Regex.m */; };
+		4C23FEC2E0E94592973989B8 /* TeamTypeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FA7CCEAA430CAFA6D25C /* TeamTypeTest.m */; };
 		4C23FFE0874EE6DD2D695AF1 /* TeamType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C23FA134F34E89F17C98805 /* TeamType.m */; };
 		D1078EB62248C6B90075AF28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1078EB52248C6B90075AF28 /* AppDelegate.m */; };
 		D1078EBE2248C6BA0075AF28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1078EBD2248C6BA0075AF28 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		4C23F92A940BD71AF1085393 /* RequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestHandler.m; sourceTree = "<group>"; };
 		4C23F97A7AD456A0E869EC61 /* TeamType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamType.h; sourceTree = "<group>"; };
 		4C23FA134F34E89F17C98805 /* TeamType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamType.m; sourceTree = "<group>"; };
+		4C23FA7CCEAA430CAFA6D25C /* TeamTypeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamTypeTest.m; sourceTree = "<group>"; };
 		4C23FA949C9FC1AB038F70CC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		4C23FAECAA960847C45F4DAF /* HeadingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadingLabel.h; sourceTree = "<group>"; };
 		4C23FAFDF68B0B7EBEB4C8DD /* NSString+Regex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Regex.m"; sourceTree = "<group>"; };
@@ -203,6 +205,14 @@
 				4C23FD10F4C5350CAC511ADC /* Content.strings */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		4C23F5297326DBEC7F7BAF46 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				4C23FA7CCEAA430CAFA6D25C /* TeamTypeTest.m */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 		4C23F6D80101D933F03CBD42 /* ViewControllers */ = {
@@ -353,6 +363,7 @@
 			children = (
 				D1078ECF2248C6BA0075AF28 /* Info.plist */,
 				4C23F12A41E27E2A91DD9188 /* ViewModels */,
+				4C23F5297326DBEC7F7BAF46 /* Enums */,
 			);
 			path = "Job Applicator ObjCTests";
 			sourceTree = "<group>";
@@ -541,6 +552,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C23F4671C661D1545A794BE /* ViewModelTests.m in Sources */,
+				4C23FEC2E0E94592973989B8 /* TeamTypeTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,11 +5,12 @@
 
 #import "JobApplication.h"
 
-static NSString const *nameKey = @"name";
-static NSString const *emailKey = @"email";
-static NSString const *aboutKey = @"about";
-static NSString const *teamsKey = @"teams";
-static NSString const *urlsKey = @"urls";
+typedef NSString *JobApplicationJSONKey NS_TYPED_ENUM;
+static JobApplicationJSONKey const NameKey = @"name";
+static JobApplicationJSONKey const EmailKey = @"email";
+static JobApplicationJSONKey const AboutKey = @"about";
+static JobApplicationJSONKey const TeamsKey = @"teams";
+static JobApplicationJSONKey const UrlsKey = @"urls";
 
 @implementation JobApplication
 
@@ -31,11 +32,11 @@ static NSString const *urlsKey = @"urls";
 
 - (instancetype)initWithJSON:(NSDictionary *)json {
 
-    NSString *name = json[nameKey] ?: @"";
-    NSString *email = json[emailKey] ?: @"";
-    NSString *about = json[aboutKey] ?: @"";
-    NSArray *teams = json[teamsKey] ?: @[];
-    NSArray *urls = json[urlsKey] ?: @[];
+    NSString *name = json[NameKey] ?: @"";
+    NSString *email = json[EmailKey] ?: @"";
+    NSString *about = json[AboutKey] ?: @"";
+    NSArray *teams = json[TeamsKey] ?: @[];
+    NSArray *urls = json[UrlsKey] ?: @[];
 
     return [self initWithName:name email:email about:about teams:teams urls:urls];
 }
@@ -43,12 +44,11 @@ static NSString const *urlsKey = @"urls";
 - (NSDictionary *)toJSON {
 
     return @{
-            nameKey: self.name,
-            nameKey: self.name,
-            emailKey: self.email,
-            aboutKey: self.about,
-            teamsKey: self.teams,
-            urlsKey: self.urls
+            NameKey: self.name,
+            EmailKey: self.email,
+            AboutKey: self.about,
+            TeamsKey: self.teams,
+            UrlsKey: self.urls
     };
 }
 

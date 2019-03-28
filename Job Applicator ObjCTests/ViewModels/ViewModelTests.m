@@ -29,7 +29,7 @@
     self.viewModel = [ViewModel new];
     self.aName = @"A Name";
     self.email = @"test@test.com";
-    self.team = [[[TeamType alloc] initWithTeam:android] string];
+    self.team = TeamAndroid;
     self.about = @"About text";
     self.url = @"https://test.com";
 }
@@ -129,7 +129,7 @@
 
 - (void)test_createApplication_validateArrayPopulation_assertEqual {
 
-    NSString *teamString = [NSString stringWithFormat:@"%@, %@", self.team, [[[TeamType alloc] initWithTeam:ios] string]];
+    NSString *teamString = [NSString stringWithFormat:@"%@, %@", self.team, TeamIos];
     NSString *urlString = [NSString stringWithFormat:@"%@\n%@", self.url, self.url];
 
     JobApplication *application = [self.viewModel createApplicationWithName:self.aName

@@ -7,43 +7,22 @@
 
 @implementation TeamType
 
-+ (nullable TeamType *)createWithString:(NSString *)rawValue {
++ (NSArray<Team> *)allTeams {
 
-    NSUInteger index = [TeamType.stringValues indexOfObject:rawValue];
-    return (index != NSNotFound) ? [[TeamType alloc] initWithTeam:index] : nil;
+    return @[TeamAndroid, TeamIos, TeamFrontend, TeamBackend, TeamDesign];
 }
 
-+ (NSArray<NSString *> *)stringValues {
++ (nullable Team)teamWithString:(NSString *)rawValue {
 
-    return @[@"android", @"ios", @"frontend", @"backend", @"design"];
-}
+    for (Team team in self.allTeams) {
 
-- (instancetype)initWithTeam:(Team)team {
+        if ([team isEqualToString:rawValue]) {
 
-    self = [super init];
-
-    if (self) {
-
-        _team = team;
+            return team;
+        }
     }
 
-    return self;
+    return nil;
 }
 
-- (NSString *)string {
-
-    switch (self.team) {
-
-        case android:
-            return TeamType.stringValues[android]; //Use this pattern to cause a compile time error when a new Team is added.
-        case ios:
-            return TeamType.stringValues[ios];
-        case frontend:
-            return TeamType.stringValues[frontend];
-        case backend:
-            return TeamType.stringValues[backend];
-        case design:
-            return TeamType.stringValues[design];
-    }
-}
 @end
